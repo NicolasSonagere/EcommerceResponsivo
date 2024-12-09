@@ -1,238 +1,227 @@
-/* Desktop */
-.logo{
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.logo:hover{
-    transform: scale(1.1);
-}
-
-@media (min-width: 1330px){
-    .containerNav{
-        margin: 2% 20%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .slogan {
-        width: 100%;
-        text-align: center;
-        background-color: gray;
-        font-size: large;
-        color: white;
-        padding: 5px
-    }
-
+    /* Desktop */
     .logo{
-        width: 10%;
-        img{
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .logo:hover{
+        transform: scale(1.1);
+    }
+
+    @media (min-width: 1330px){
+        .containerNav{
+            margin: 2% 20%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .slogan {
             width: 100%;
+            text-align: center;
+            background-color: gray;
+            font-size: large;
+            color: white;
+            padding: 5px 0px;
+        }
+
+        .logo{
+            width: 10%;
+            img{
+                width: 100%;
+            }
+        }
+
+        .nav-links {
+            list-style: none; /* Remove os pontos */
+            display: flex; /* Alinha os itens em linha */
+            justify-content: space-around; /* Espaçamento uniforme entre os links */
+            width: 40%; /* Define a largura total de 30% */
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links li {
+            flex: 1; /* Define o espaço de cada item */
+            text-align: center;
+        }
+
+        .nav-links a {
+            text-decoration: none; /* Remove o sublinhado dos links */
+            color: black; /* Cor do texto (ajuste conforme necessário) */
+        }
+
+        .nav-links a:hover{
+            background-color: gray;
+            color: white;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .barraPesquisa {
+            display: flex; /* Coloca o input e a lupa lado a lado */
+            align-items: center; /* Alinha o input e a lupa verticalmente */
+            width: 35%; /* Define a largura total da div pai */
+        }
+
+        .barraPesquisa input[type="text"] {
+            width: 100%; /* Ocupa o espaço disponível */
+            padding: 8px 12px; /* Espaçamento interno */
+            border-radius: 5px; /* Torna o input arredondado */
+            border: 1px solid #ccc; /* Define a borda */
+            outline: none; /* Remove a borda ao focar */
+        }
+
+        .barraPesquisa img {
+            width: 40px; /* Reduz o tamanho da imagem da lupa */
+            height: auto;
+            margin-left: 8px; /* Espaçamento entre o input e a lupa */
+            cursor: pointer; /* Define o cursor como pointer */
         }
     }
 
-    .nav-links {
-        list-style: none; /* Remove os pontos */
-        display: flex; /* Alinha os itens em linha */
-        justify-content: space-around; /* Espaçamento uniforme entre os links */
-        width: 40%; /* Define a largura total de 30% */
-        padding: 0;
-        margin: 0;
-    }
 
-    .nav-links li {
-        flex: 1; /* Define o espaço de cada item */
-        text-align: center;
-    }
+    /* Para resoluções abaixo de 1330px */
+    @media (max-width: 1329px) and (min-width: 786px) {
+        .containerNav {
+            margin: 2% 10%; /* Margens ajustadas */
+            display: flex;
+            flex-direction: column; /* Empilha os itens verticalmente */
+            align-items: center;
+        }
 
-    .nav-links a {
-        text-decoration: none; /* Remove o sublinhado dos links */
-        color: black; /* Cor do texto (ajuste conforme necessário) */
-    }
-
-    .nav-links a:hover{
-        background-color: gray;
-        color: white;
-        border-radius: 20px;
-        padding: 10px;
-    }
-
-    .barraPesquisa {
-        display: flex; /* Coloca o input e a lupa lado a lado */
-        align-items: center; /* Alinha o input e a lupa verticalmente */
-        width: 35%; /* Define a largura total da div pai */
-    }
-
-    .barraPesquisa input[type="text"] {
-        width: 100%; /* Ocupa o espaço disponível */
-        padding: 8px 12px; /* Espaçamento interno */
-        border-radius: 5px; /* Torna o input arredondado */
-        border: 1px solid #ccc; /* Define a borda */
-        outline: none; /* Remove a borda ao focar */
-    }
-
-    .barraPesquisa img {
-        width: 40px; /* Reduz o tamanho da imagem da lupa */
-        height: auto;
-        margin-left: 8px; /* Espaçamento entre o input e a lupa */
-        cursor: pointer; /* Define o cursor como pointer */
-    }
-}
-
-
-/* Para resoluções abaixo de 1330px */
-@media (max-width: 1329px) and (min-width: 786px) {
-    .containerNav {
-        margin: 2% 10%; /* Margens ajustadas */
-        display: flex;
-        flex-direction: column; /* Empilha os itens verticalmente */
-        align-items: center;
-    }
-
-    .slogan {
-        width: 100%;
-        text-align: center;
-        background-color: gray;
-        font-size: large;
-        color: white;
-        padding: 5px;
-        font-size: 12px;
-    }
-
-    .logo {
-        width: 15%; /* Aumenta a largura para preencher mais espaço */
-        img{
+        .slogan {
             width: 100%;
+            text-align: center;
+            background-color: gray;
+            font-size: large;
+            color: white;
+            padding: 5px 0px;
+            font-size: 12px;
+        }
+
+        .logo {
+            width: 15%; /* Aumenta a largura para preencher mais espaço */
+            img{
+                width: 100%;
+            }
+        }
+
+        .nav-links {
+            width: 60%; /* Ajusta a largura para ocupar mais espaço */
+            justify-content: space-evenly;
+            list-style: none; /* Remove os pontos */
+            display: flex; /* Alinha os itens em linha */
+            justify-content: space-around; /* Espaçamento uniforme entre os links */
+        }
+
+        .nav-links li {
+            flex: 1; /* Define o espaço de cada item */
+            text-align: center;
+            margin-bottom: 10px;    
+        }
+
+        .nav-links a {
+            text-decoration: none; /* Remove o sublinhado dos links */
+            color: black; /* Cor do texto (ajuste conforme necessário) */
+            
+        }
+
+        .nav-links a:hover{
+            background-color: gray;
+            color: white;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .barraPesquisa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60%; /* Reduz a largura para melhor ajuste */
+        }
+
+        .barraPesquisa input[type="text"] {
+            padding: 6px 10px; /* Reduz o padding para encaixar melhor */
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .barraPesquisa img {
+            width: 40px; /* Diminui a lupa um pouco mais */
         }
     }
 
-    .nav-links {
-        width: 60%; /* Ajusta a largura para ocupar mais espaço */
-        justify-content: space-evenly;
-        list-style: none; /* Remove os pontos */
-        display: flex; /* Alinha os itens em linha */
-        justify-content: space-around; /* Espaçamento uniforme entre os links */
-    }
 
-    .nav-links li {
-        flex: 1; /* Define o espaço de cada item */
-        text-align: center;
-        margin-bottom: 10px;    
-    }
+    /* Para resoluções abaixo de 786px (mobile) */
 
-    .nav-links a {
-        text-decoration: none; /* Remove o sublinhado dos links */
-        color: black; /* Cor do texto (ajuste conforme necessário) */
-        
-    }
+    @media (max-width: 785px) {
+        body{
+            font-size: 10px;
+        }
 
-    .nav-links a:hover{
-        background-color: gray;
-        color: white;
-        border-radius: 20px;
-        padding: 10px;
-    }
-
-    .barraPesquisa {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60%; /* Reduz a largura para melhor ajuste */
-    }
-
-    .barraPesquisa input[type="text"] {
-        padding: 6px 10px; /* Reduz o padding para encaixar melhor */
-        width: 100%;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
-
-    .barraPesquisa img {
-        width: 40px; /* Diminui a lupa um pouco mais */
-    }
-}
-
-
-/* Para resoluções abaixo de 786px (mobile) */
-
-@media (max-width: 785px) {
-    body{
-        font-size: 10px;
-    }
-
-    .slogan {
-        width: 100%;
-        text-align: center;
-        background-color: gray;
-        font-size: large;
-        color: white;
-        padding: 5px;
-        font-size: 8px;
-    }
-
-    .barraPesquisa img{
-        width: 30px;
-    }
-
-    .nav-links a:hover{
-        text-decoration: underline;
-    }
-
-    .containerNav {
-        margin: 2% 10%; /* Margens ajustadas */
-        display: flex;
-        flex-direction: column; /* Empilha os itens verticalmente */
-        align-items: center;
-    }
-
-    .slogan {
-        width: 100%;
-        text-align: center;
-        background-color: gray;
-        font-size: large;
-        color: white;
-        padding: 5px;
-        font-size: 12px;
-    }
-
-    .logo {
-        width: 15%; /* Aumenta a largura para preencher mais espaço */
-        img{
+        .slogan {
             width: 100%;
+            padding: 5px 0px;
+            text-align: center;
+            background-color: gray;
+            color: white;
+            font-size: 8px;
+        }
+
+        .barraPesquisa img{
+            width: 30px;
+        }
+
+        .nav-links a:hover{
+            text-decoration: underline;
+        }
+
+        .containerNav {
+            margin: 2% 10%; /* Margens ajustadas */
+            display: flex;
+            flex-direction: column; /* Empilha os itens verticalmente */
+            align-items: center;
+        }
+
+        .logo {
+            width: 15%; /* Aumenta a largura para preencher mais espaço */
+            img{
+                width: 100%;
+            }
+        }
+
+        .nav-links {
+            width: 60%; /* Ajusta a largura para ocupar mais espaço */
+            justify-content: space-evenly;
+            list-style: none; /* Remove os pontos */
+            display: flex; /* Alinha os itens em linha */
+            justify-content: space-around; /* Espaçamento uniforme entre os links */
+        }
+
+        .nav-links li {
+            flex: 1; /* Define o espaço de cada item */
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .nav-links a {
+            text-decoration: none; /* Remove o sublinhado dos links */
+            color: black; /* Cor do texto (ajuste conforme necessário) */
+        }
+
+        .barraPesquisa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60%; /* Reduz a largura para melhor ajuste */
+        }
+
+        .barraPesquisa input[type="text"] {
+            padding: 6px 10px; /* Reduz o padding para encaixar melhor */
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
         }
     }
-
-    .nav-links {
-        width: 60%; /* Ajusta a largura para ocupar mais espaço */
-        justify-content: space-evenly;
-        list-style: none; /* Remove os pontos */
-        display: flex; /* Alinha os itens em linha */
-        justify-content: space-around; /* Espaçamento uniforme entre os links */
-    }
-
-    .nav-links li {
-        flex: 1; /* Define o espaço de cada item */
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .nav-links a {
-        text-decoration: none; /* Remove o sublinhado dos links */
-        color: black; /* Cor do texto (ajuste conforme necessário) */
-    }
-
-    .barraPesquisa {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60%; /* Reduz a largura para melhor ajuste */
-    }
-
-    .barraPesquisa input[type="text"] {
-        padding: 6px 10px; /* Reduz o padding para encaixar melhor */
-        width: 100%;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
-}
