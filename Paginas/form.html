@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Erica Ateliê</title>
+</head>
+<body>
+    <header>
+        <p class="slogan">Fantasias e cosplays feitos a mão com muito carinho e qualidade!</p>
+        <section class="containerNav">
+            <a class="logo" href="../index.html"><img src="../images/ERICA ATELIE.png" alt=""></a>
+            <ul class="nav-links">
+                <li><a href="./HeroisProdutos.html">Heróis</a></li>
+                <li><a href="./HalloweenProdutos.html">Halloween</a></li>
+                <li><a href="./AnimeProdutos.html">Anime</a></li>
+                <li><a href="./ProfissoesProdutos.html">Profissões</a></li>
+            </ul>
+            <div class="barraPesquisa">
+                <input type="text" placeholder="Pesquisar...">
+                <img src="./../images/lupa.png" alt="">
+                <a href="./../Paginas/carrinho.html"><img src="./../images/carrinho.png" alt=""></a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="corpoForm">
+            <h1>Preencha os dados para finalizar a compra</h1>
+            <form class="formu" action="/submit" method="post">
+                <h2>Dados pessoais</h2>
+                <div class="nome">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="Email">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="CPF">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" id="cpf" required>
+                </div>
+
+                <div class="telefone">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" required>
+                </div>          
+
+                <h2>Dados para entrega</h2>
+                <label for="cep">CEP:</label> 
+                <input type="text" name="CEP"> <br>
+                <label for="estado">Estado:</label>
+                <select name="estado" id="estado">
+                    <option value=""></option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select> <br>
+                <label for="Cidade">Cidade:</label>
+                <select name="cidade" id="cidade">
+                    <option value=""></option>
+                </select> <br>
+                <label for="Bairro">Bairro:</label>
+                <input type="text" name="estado" id="estado">
+
+                <h2>Metodo de pagamento</h2>
+                <div class="metodo">
+                    <input type="radio" name="pagamento" id="credito">
+                    <label for="pagamento">Crédito</label>
+                    <input type="radio" name="pagamento" id="debito">
+                    <label for="pagamento">Debito</label>
+                    <input type="radio" name="pagamento" id="pix">
+                    <label for="pagamento">Pix</label>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <section class="containerFooter">
+            <div class="contact-info">
+            <span>Contato:</span>
+            <a href="tel:+55 (19) 99999-9999">+55 (19) 99999-9999</a>
+            <a href="mailto:erica.atelie@gmail.com">erica.atelie@gmail.com</a>
+            </div>
+            <div class="social-links">
+            <a href="#" target="_blank">
+                <img src="../images/whatsapp.png" alt="WhatsApp" width="24" height="24">
+                Contato WhatsApp
+            </a>
+            <a href="#" target="_blank">
+                <img src="../images/instagram.svg" alt="Instagram" width="24" height="24">
+                Visite-nos no Instagram
+            </a>
+            <a href="#" target="_blank">
+                <img src="../images/face.svg" alt="Facebook" width="24" height="24">
+                Visite-nos no Facebook
+            </a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
